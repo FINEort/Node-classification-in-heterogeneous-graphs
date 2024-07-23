@@ -62,21 +62,6 @@ def load_data(data_names='cora', normalize_feature=True, keep_unnormalize_A=True
             data.val_mask = data.val_mask.unsqueeze(1).expand(-1, 10).contiguous()
             data.test_mask = data.test_mask.unsqueeze(1).expand(-1, 10).contiguous()
             datas[data_name] = data
-        elif data_name in ['cora_ml']:
-            data = geo_data.CitationFull(os.path.join(DATA_ROOT, data_name), data_name).data
-            train_mask = torch.zeros(data.num_nodes, dtype=torch.bool)
-            val_mask = torch.zeros(data.num_nodes, dtype=torch.bool)
-            test_mask = torch.zeros(data.num_nodes, dtype=torch.bool)
-            train_mask[:140] = True
-            val_mask[200:700] = True
-            test_mask[700:1700] = True
-            data.train_mask = train_mask
-            data.val_mask = val_mask
-            data.test_mask = test_mask
-            data.train_mask = data.train_mask.unsqueeze(1).expand(-1, 10).contiguous()
-            data.val_mask = data.val_mask.unsqueeze(1).expand(-1, 10).contiguous()
-            data.test_mask = data.test_mask.unsqueeze(1).expand(-1, 10).contiguous()
-            datas[data_name] = data
         elif data_name in ['cornell', 'texas', 'wisconsin']:
             datas[data_name] = geo_data.WebKB(os.path.join(DATA_ROOT, data_name), data_name).data
         elif data_name in ['Actor']:
