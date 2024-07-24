@@ -1,6 +1,6 @@
 # Node-classification-in-heterogeneous-graphs
 ### 1.数据
-异质数据集：
+#### 异质数据集：
 | datasets | #Nodes | #Edges | #Features | #Classes | #Train/Val/Test |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | cornell | 183 | 298 | 1703 | 5 | 87/59/37 |
@@ -11,7 +11,7 @@
 | Actor | 7600 | 30019 | 932 | 5 | 3648/2432/1520 |
 | roman_empire | 22662 | 32927 | 300 | 18 | 11331/5665/5666 |
 
-同质数据集：
+#### 同质数据集：
 | datasets | #Nodes | #Edges | #Features | #Classes | #Train/Val/Test |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | cora | 2708 | 10556 | 1433 | 7 | 140/500/1000 |
@@ -20,7 +20,10 @@
 ### 2.模型
 ![image](https://github.com/user-attachments/assets/5461c15f-f0c7-4ab2-a289-817191a362a6)
 ### 3.实验
-#### Table1: Node classification experiments in heterogeneous graphs
+#### Figure 1. Accuracy of GAT and our model based on degrees gap
+![texas](https://github.com/user-attachments/assets/c814ecf6-d552-4f06-8a6f-cadd6063ef75)
+![wisconsin](https://github.com/user-attachments/assets/64fa631b-7a24-40b6-92ce-11b7d7214455)
+#### Table 1. Node classification experiments in heterogeneous graphs
 |          | Cornell     | Texas        | Wisconsin    | Chameleon    | Squirrel     | Roman Empire | Actor        |
 |----------|-------------|--------------|--------------|--------------|--------------|--------------|--------------|
 | GCN      | 45.135135   | 58.378378    | 52.941176    | 35.155755    | 29.171272    | -            | 28.907895    |
@@ -32,7 +35,7 @@
 | DCM      | -           | 84.96 ± 5.60 | 85.36 ± 5.05 | 53.76 ± 3.72 | 35.13 ± 2.27 | -            | -            |
 | ADPA     | 82.9±3.0    | 83.8±2.7     | 81.6±3.5     | 46.2±1.3     | 45.2±1.3     | 84.3±0.3     | -            |
 | Ours     | 77.83783784 | 85.67567568  | 86.470588    | 40.94689355  | 33.12927076  | -            | 36.90131579  |
-#### Table2: Node classification experiments in homogeneous graphs
+#### Table 2. Node classification experiments in homogeneous graphs
 |          | CoraML   | CiteSeer | PubMed    |
 |----------|----------|----------|-----------|
 | GCN      | 84.2±0.5 | 65.3±0.5 | 79.2±0.4  |
