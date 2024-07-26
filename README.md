@@ -50,15 +50,15 @@
 | attention | edgeMLP | simrank | cornell            | texas             | wisconsin          | chameleon          | squirrel    | Actor              |
 |-----------|---------|---------|--------------------|-------------------|--------------------|--------------------|-------------|--------------------|
 | w         | w       | w       | 0.778378378        | 0.854054054       | 0.856862745        | 0.4094689          | 0.331292708 | 0.369013157        |
-| w         | w       | w/O     | 0.748648649        | 0.835135135       | 0.847058824        | 0.3600259          | 0.331782292 | 0.363552632        |
-| w         | w/O     | w       | 0.681081081        | 0.748648649       | 0.739215686        | 0.361496732        | 0.319738197 | 0.337368421        |
-| w/O       | w       | w       | 0.72972973         | 0.818918919       | 0.839215686        | 0.366286956        | 0.321593165 | 0.364013158        |
+| w         | w       | w/o     | 0.748648649        | 0.835135135       | 0.847058824        | 0.3600259          | 0.331782292 | 0.363552632        |
+| w         | w/o     | w       | 0.681081081        | 0.748648649       | 0.739215686        | 0.361496732        | 0.319738197 | 0.337368421        |
+| w/o       | w       | w       | 0.72972973         | 0.818918919       | 0.839215686        | 0.366286956        | 0.321593165 | 0.364013158        |
 
 ### 4.参考文献
-Sun H, Li X, Wu Z, et al. Breaking the Entanglement of Homophily and Heterophily in Semi-supervised Node Classification[J]. arXiv preprint arXiv:2312.04111, 2023. [[paper]](https://arxiv.org/abs/2312.04111)
+Sun H, Li X, Wu Z, et al. Breaking the Entanglement of Homophily and Heterophily in Semi-supervised Node Classification[J]. arXiv preprint arXiv:2312.04111, 2023. [[paper]](https://arxiv.org/abs/2312.04111)(ADPA)
 
-Battiloro C, Spinelli I, Telyatnikov L, et al. From latent graph to latent topology inference: Differentiable cell complex module[J]. arXiv preprint arXiv:2305.16174, 2023. [[paper]](https://arxiv.org/abs/2305.16174) [[code]](https://github.com/spindro/differentiable_cell-complex_module)
+Battiloro C, Spinelli I, Telyatnikov L, et al. From latent graph to latent topology inference: Differentiable cell complex module[J]. arXiv preprint arXiv:2305.16174, 2023. [[paper]](https://arxiv.org/abs/2305.16174) [[code]](https://github.com/spindro/differentiable_cell-complex_module)(DCM)
 
-Pan E, Kang Z. Beyond homophily: Reconstructing structure for graph-agnostic clustering[C]//International Conference on Machine Learning. PMLR, 2023: 26868-26877. [[paper]](https://proceedings.mlr.press/v202/pan23b.html)
+Pan E, Kang Z. Beyond homophily: Reconstructing structure for graph-agnostic clustering[C]//International Conference on Machine Learning. PMLR, 2023: 26868-26877. [[paper]](https://proceedings.mlr.press/v202/pan23b.html)[[code]](https://github.com/Panern/DGCN)(DGCN)
 
-Lee S Y, Bu F, Yoo J, et al. Towards deep attention in graph neural networks: Problems and remedies[C]//International Conference on Machine Learning. PMLR, 2023: 18774-18795. [[paper]](https://proceedings.mlr.press/v202/lee23b.html) [[code]](https://github.com/syleeheal/AERO-GNN)
+Lee S Y, Bu F, Yoo J, et al. Towards deep attention in graph neural networks: Problems and remedies[C]//International Conference on Machine Learning. PMLR, 2023: 18774-18795. [[paper]](https://proceedings.mlr.press/v202/lee23b.html) [[code]](https://github.com/syleeheal/AERO-GNN)(AERO-GNN)
