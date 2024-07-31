@@ -41,9 +41,9 @@
 #### Table 2. Node classification experiments in homogeneous graphs
 |          | Cora      | CiteSeer  | PubMed    |
 |----------|---------------|---------------|---------------|
-| GCN      | 80.71±0.2     | 71.05±0.1     | ___79.1±0.2___|
+| GCN      | 80.71±0.2     | 71.05±0.1     | 79.1±0.2      |
 | GAT      | 82.24±0.7     | 70.19±0.4     | 78.42±0.3     |
-| GATv2    |___82.62±0.4___|___71.42±0.7___| 78.34±0.4     |
+| GATv2    | 82.62±0.4     | 71.42±0.7     | 78.34±0.4     |
 | ours     | **83.09±0.3** | **71.53±0.3** | **79.28±0.3** |
 #### Table 3. Ablation study
 | edgeMLP | simrank | cornell            | texas             | wisconsin          | chameleon          | squirrel           | Actor              |
